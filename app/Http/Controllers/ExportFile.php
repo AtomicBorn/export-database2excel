@@ -22,7 +22,7 @@ class ExportFile extends Controller
                             'Ethnicity', 'Age', 'Hire Date', 'Annual Salary', 'Bonus %', 'Country', 'City']);
 
         foreach($employee as $user) {
-            fputcsv($handle, [$user->EEID, $user->full_name, $user->job_title, $user->department, $user->business_unit, $user->gender, 
+            fputcsv($handle, [$user->EeId, $user->full_name, $user->job_title, $user->department, $user->business_unit, $user->gender, 
                                 $user->ethnicity, $user->age, $user->hire_date, $user->annual_salary, $user->bonus, $user->country, $user->city]);
 
         }
